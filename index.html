@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
     <header>
@@ -13,31 +13,45 @@
                 <h1>Mike Orvin</h1>
             </div>
             <div class="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-                <a href="#">Projects</a>
+                <button><a href="index.html">Home</a></button>
+                <button><a href="about.html">About</a></button>
+                <button><a href="contact.html">Contact</a></button>
+                <button><a href="projects.html">Projects</a></button>
             </div>
         </nav>
     </header>
-    <section id="top">
-        <div class="title">
-            <h2>Mike Orvin</h2>
-            <button>My Projects</button>
-        </div>
+    <section class="topsection">
+        <button class="image-button"><h1>Mike Orvin</h1>
+        <a href="projects.html">My Portfolio</a>
+        </button>
     </section>
-    <section id="projects">
+    <section>
         <div class="container">
-            <div class="box">Project 1</div>
-            <div class="box">Project 2</div>
-            <div class="box">Project 3</div>
-            <div class="box">Project 4</div>
-            <div class="box">Project 5</div>
-            <div class="box">Project 6</div>
+            <div class="project-element"><img src="https://picsum.photos/300"/>
+            <p>Portfolio Piece</p>
+            </div>
+            <div class="project-element"><img src="https://picsum.photos/300"/>
+                <p>Portfolio Piece</p>
+            </div>
+            <div class="project-element"><img src="https://picsum.photos/300"/>
+                <p>Portfolio Piece</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="project-element"><img src="https://picsum.photos/300"/>
+            <p>Portfolio Piece</p>
+            </div>
+            <div class="project-element"><img src="https://picsum.photos/300"/>
+                <p>Portfolio Piece</p>
+            </div>
+            <div class="project-element"><img src="https://picsum.photos/300"/>
+                <p>Portfolio Piece</p>
+            </div>
         </div>
     </section>
-    <footer id="contact">
-        <button>Contact Me</button>
+    <footer>
+        <button><a href="contact.html">Contact Me</a></button>
     </footer>
     
 </body>
