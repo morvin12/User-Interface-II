@@ -49,23 +49,24 @@ h1{
     font-size: 3rem;
 }
 .topsection{
-    display: flex;
-    justify-content: center;
-}
-.image-button{
     background-image: url("https://picsum.photos/600/400");
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
-    font-size: large;
-    width: 600px;
-    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
 }
 .container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 20px;
+}
+.container div{
+    width: 30%;
+    margin: 2% 0;
 }
 .project-element{
     text-align: center;
@@ -91,3 +92,69 @@ footer{
     padding: 20px;
     text-align: center;
 }
+
+
+/* responsive design  */
+
+@media(max-width: 800px){
+    body{
+        background-color: lightblue;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: lemonchiffon;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .links button{
+        width: 40%;
+        margin: 1% 0;
+    }
+    .topsection{
+        width: 80%;
+        margin: 5% auto;
+    }
+    .container div{
+        width: 40%;
+    }
+}
+
+
+@media(max-width: 500px){
+    body{
+        background-color: lightgray;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: darkgray;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .links button{
+        width: 40%;
+        margin: 1% 0;
+    }
+    .topsection{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .container div{
+        width: 40%;
+    }
+
+}
+
